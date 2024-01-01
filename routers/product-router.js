@@ -20,8 +20,8 @@ router.get("/", asyncHandler(getAllProducts));
 
 router.post(
   "/",
-  // protect,
-  // restrictTo("ADMIN"),
+  protect,
+  restrictTo("ADMIN"),
   uploadProductImages,
   validator(addProductValidationSchema),
   asyncHandler(addProduct)
