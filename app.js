@@ -1,7 +1,7 @@
 const { join } = require('node:path');
 const cors = require("cors")
 const express = require('express');
-const jwt = require('jsonwebtoken');
+
 
 
 const { connectToDatabase } = require('./database/database-connection');
